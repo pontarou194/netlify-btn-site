@@ -1,0 +1,150 @@
+*
+{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* ナビゲーション */
+label.logo a{
+  color: white;
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right:50px;
+}
+nav{
+  display: flex;
+  background-color: black;
+  width: 100%;
+  top:0;
+  justify-content: center;
+
+}
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 2px;
+}
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.active,a:hover{
+    transition: .5s;
+    border-radius: 10% 100% 100% 0% / 0% 50% 50% 0% ;
+  }
+/* 
+  ロードエリア */
+.loader_area{
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+}
+.loader{
+  position:relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+.loader:hover{
+  background:#03e9f4;
+  box-shadow:0 0 5px #03e9f4,
+             0 0 25px #03e9f4,
+             0 0 50px #03e9f4,
+             0 0 200px #03e9f4,
+             0 0 400px #03e9f4;
+}
+.loader span{
+  position: absolute;
+  display: block;
+}
+.loader span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, transparent,#03e9f4);
+  animation: animate1 1s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate1{
+  0%
+  {
+    left: -100%;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+.loader span:nth-child(3){
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, transparent,#03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate3{
+  0%
+  {
+    left: 100%;
+  }
+  100%{
+    left: -100%;
+  }
+}
+
+.loader span:nth-child(2){
+  right: 0;
+  top: -100%;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent,#03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate2{
+  0%
+  {
+    top: -100%;
+  }
+  100%{
+    top: 100%;
+  }
+}
+
+.loader span:nth-child(4){
+  left: 0;
+  top: 100%;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent,#03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes animate4{
+  0%
+  {
+    top: 100%;
+  }
+  100%{
+    top: -100%;
+  }
+}
+
