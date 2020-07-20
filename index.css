@@ -21,6 +21,29 @@ nav{
   justify-content: center;
 
 }
+#check,
+#nav-input{
+    display: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+.fa.fa-bars{
+  width:80px;
+  height: 80px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  line-height: 80px;
+  text-align: center;
+}
+
 nav ul{
     float: right;
     margin-right: 60px;
@@ -43,6 +66,22 @@ a.active,a:hover{
     transition: .5s;
     border-radius: 10% 100% 100% 0% / 0% 50% 50% 0% ;
   }
+
+/* ナビゲーションSP */
+@media screen and (max-width:960px) {
+    ul{
+      display:none;
+    }
+    .fa.fa-bars{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 120px;
+      height: 120px;
+    }
+    
+}
+
 /* 
   ロードエリア */
 .loader_area{
