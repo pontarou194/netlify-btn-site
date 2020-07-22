@@ -88,25 +88,33 @@ a.active,a:hover{
       width: 120px;
       height: 120px;
       font-size: 60px;
+      z-index: 2;
     }
     label.logo a{
       margin-right:0;
     }
     
     #menu[type=checkbox]:checked ~ ul{
-      position: absolute;
+      position: fixed;
       top: 15%;
-      left: 40%;
+      left: 0;
       width: 100vw;
       height: 100vh;
       display: inline-flex;
       flex-direction: column;
+      text-align: center;
       z-index: 1;
+      animation-name: animation1;
+      animation-duration: 0.5s;
     }
-    #menu[type=checkbox]:checked ~ .fa .fa-bars{
-      display :none;
+    @keyframes animation1 {
+      0% {
+        left: -30vw;
+      }
+      100% {
+        left: 0;
+      }
     }
-         
 }
 
 /* 
