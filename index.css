@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 /* ナビゲーション */
+
 label.logo a{
   color: white;
   font-size: 50px;
@@ -19,21 +20,19 @@ nav{
   width: 100%;
   top:0;
   justify-content: center;
+}
 
+.nav_open,
+.nav_close{
+  display:none;
 }
-#check,
-#nav-input{
-    display: none;
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50vw;
 }
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
+
+
 .fa.fa-bars{
   width:80px;
   height: 80px;
@@ -43,7 +42,6 @@ nav{
   line-height: 80px;
   text-align: center;
 }
-
 nav ul{
     float: right;
     margin-right: 60px;
@@ -67,19 +65,48 @@ a.active,a:hover{
     border-radius: 10% 100% 100% 0% / 0% 50% 50% 0% ;
   }
 
+  #menu[type=checkbox]:checked {
+    width: 15px;
+    height: 15px;
+  }
+  
+
 /* ナビゲーションSP */
 @media screen and (max-width:960px) {
-    ul{
-      display:none;
-    }
+  .nav_open,
+  .nav_close{
+    display: block;
+  }
+  ul{
+    display:none;
+  }
+  
     .fa.fa-bars{
       position: fixed;
       bottom: 0;
       left: 0;
       width: 120px;
       height: 120px;
+      font-size: 60px;
+    }
+    label.logo a{
+      margin-right:0;
     }
     
+    #menu[type=checkbox]:checked ~ ul{
+      position: absolute;
+      top: 15%;
+      left: 40%;
+      width: 100vw;
+      height: 100vh;
+      display: inline-flex;
+      flex-direction: column;
+      z-index: 1;
+    }
+    #menu[type=checkbox]:checked ~ .fa .fa-bars{
+      display :none;
+    }
+         
 }
 
 /* 
@@ -117,7 +144,6 @@ a.active,a:hover{
   height: 40px;
   background: linear-gradient(90deg, transparent,#03e9f4);
   animation: animate1 1s linear infinite;
-  animation-delay: 0s;
 }
 @keyframes animate1{
   0%
