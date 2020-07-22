@@ -85,9 +85,9 @@ a.active,a:hover{
       position: fixed;
       bottom: 0;
       left: 0;
-      width: 120px;
-      height: 120px;
-      font-size: 60px;
+      width: 150px;
+      height: 150px;
+      font-size: 80px;
       z-index: 2;
     }
     label.logo a{
