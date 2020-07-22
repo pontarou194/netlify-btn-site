@@ -115,6 +115,10 @@ a.active,a:hover{
         left: 0;
       }
     }
+    nav ul li a{
+      font-weight: 900;
+      font-size: 40px;
+  }
 }
 
 /* 
