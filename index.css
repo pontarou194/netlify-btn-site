@@ -61,7 +61,7 @@ nav ul li a{
     text-decoration: none;
 }
 a.active,a:hover{
-    transition: .5s;
+  -webkit-transition: .5s;
     border-radius: 10% 100% 100% 0% / 0% 50% 50% 0% ;
   }
 
