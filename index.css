@@ -121,8 +121,7 @@ a.active,a:hover{
   }
 }
 
-/* 
-  ロードエリア */
+/* ロードエリア */
 .loader_area{
   justify-content: center;
   align-items: center;
@@ -155,7 +154,7 @@ a.active,a:hover{
   width: 100%;
   height: 40px;
   background: linear-gradient(90deg, transparent,#03e9f4);
-  animation: animate1 1s linear infinite;
+  -webkit-animation: animate1 1s linear infinite;
 }
 @keyframes animate1{
   0%
@@ -173,8 +172,8 @@ a.active,a:hover{
   width: 100%;
   height: 40px;
   background: linear-gradient(90deg, transparent,#03e9f4);
-  animation: animate3 1s linear infinite;
-  animation-delay: 1s;
+  -webkit-animation: animate3 1s linear infinite;
+  -webkit-animation-delay: 1s;
 }
 @keyframes animate3{
   0%
@@ -192,8 +191,8 @@ a.active,a:hover{
   width: 40px;
   height: 100%;
   background: linear-gradient(90deg, transparent,#03e9f4);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.5s;
+  -webkit-animation: animate2 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
 }
 @keyframes animate2{
   0%
@@ -211,8 +210,8 @@ a.active,a:hover{
   width: 40px;
   height: 100%;
   background: linear-gradient(0deg, transparent,#03e9f4);
-  animation: animate4 1s linear infinite;
-  animation-delay: 1.5s;
+  -webkit-animation: animate4 1s linear infinite;
+  -webkit-animation-delay: 1.5s;
 }
 @keyframes animate4{
   0%
