@@ -72,7 +72,7 @@ a.active,a:hover{
   
 
 /* ナビゲーションSP */
-@media screen and (max-width:960px) {
+@media screen and (max-width:1280px) {
   .nav_open,
   .nav_close{
     display: block;
