@@ -104,8 +104,8 @@ a.active,a:hover{
       flex-direction: column;
       text-align: center;
       z-index: 1;
-      -webkit-animation-name: animation1;
-      -webkit-animation-duration: 0.5s;
+      animation-name: animation1;
+      animation-duration: 0.5s;
     }
     @keyframes animation1 {
       0% {
