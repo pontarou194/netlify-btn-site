@@ -71,6 +71,58 @@ a.active,a:hover{
   }
   
 
+.bgv_area{
+  position: relative;
+  background-color: #000;
+}
+.bgv_area::after{
+  position: absolute;
+  background-color: #000;
+  top:0;
+  left:0;
+  bottom: 0;
+  left: 0;
+}
+.bgv{
+  opacity: 0.6;
+}
+.bgv_description{
+  position: absolute;
+  min-width:150px;
+  min-height: 200px;
+  top:20%;
+  left:20%;
+  color: white;
+  font-family: 'メイリオ';
+  list-style: none;
+  font-size: 40px;
+  padding: 40px 10px;
+}
+.fadeInUp {
+  opacity : 0;
+  transform: translateY(100px);
+  transition: 2s;
+}
+
+li{
+  text-shadow:1px 1px 3px #000000;
+}
+
+li:nth-child(1){
+  margin: 40px -15px 0;
+}
+li:nth-child(2){
+  margin: 40px 15px;
+}
+li:nth-child(3){
+  margin: 40px 25px;
+}
+li:nth-child(4){
+  margin: 40px 35px;
+}
+
+
+
 /* ナビゲーションSP */
 @media screen and (max-width:1080px) {
   .nav_open,
