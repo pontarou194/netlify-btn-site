@@ -104,20 +104,20 @@ a.active,a:hover{
   transition: 2s;
 }
 
-li{
+.bgv_description li{
   text-shadow:1px 1px 3px #000000;
 }
 
-li:nth-child(1){
+.bgv_description li:nth-child(1){
   margin: 40px -15px 0;
 }
-li:nth-child(2){
+.bgv_description li:nth-child(2){
   margin: 40px 0px;
 }
-li:nth-child(3){
+.bgv_description li:nth-child(3){
   margin: 40px 15px;
 }
-li:nth-child(4){
+.bgv_description li:nth-child(4){
   margin: 40px 45px;
 }
 
@@ -129,7 +129,7 @@ li:nth-child(4){
   .nav_close{
     display: block;
   }
-  ul{
+  .top_banner{
     display:none;
   }
   
@@ -170,6 +170,27 @@ li:nth-child(4){
     nav ul li a{
       font-weight: 800;
       font-size: 40px;
+  }
+  .bgv_description{
+    font-size: 15px;
+    top: 0;
+    left:20%;
+    padding: 0;
+  }
+  .fadeInUp {
+    transform: translateY(50px);
+  }
+  li:nth-child(1){
+    margin: 5px -7.5px 0;
+  }
+  li:nth-child(2){
+    margin: 5px 0px;
+  }
+  li:nth-child(3){
+    margin: 5px 7px;
+  }
+  li:nth-child(4){
+    margin: 0 22.5px;
   }
 }
 
