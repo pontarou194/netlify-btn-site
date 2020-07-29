@@ -108,6 +108,7 @@ a.active,a:hover{
 
 .bgv_description li{
   text-shadow:1px 1px 3px #000000;
+  white-space: nowrap;
 }
 
 .bgv_description li:nth-child(1){
@@ -175,8 +176,7 @@ a.active,a:hover{
   }
   .bgv_description{
     font-size: 15px;
-    top: 0;
-    left:20%;
+    white-space: nowrap;
     padding: 0;
   }
   .fadeInUp {
