@@ -170,7 +170,7 @@ a.active,a:hover{
       }
     }
 
-    #menu:checked ~ * .loader{
+    #menu:checked ~ .loader_area > .loader{
       visibility: hidden;
       }
     
@@ -178,7 +178,7 @@ a.active,a:hover{
     nav ul li a{
       font-weight: 800;
       font-size: 40px;
-  }
+    }
 
   /* 動画背景と文字*/
   .bgv_description{
