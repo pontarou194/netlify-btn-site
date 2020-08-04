@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 /* ナビゲーション */
+body{
+  background-color: #000;
+}
 
 label.logo a{
   color: white;
@@ -13,8 +16,9 @@ label.logo a{
   font-weight: 600;
   text-decoration: none;
   margin-right:50px;
+  background-color: black;
 }
-nav{
+.nav{
   display: flex;
   background-color: black;
   width: 100%;
@@ -29,7 +33,7 @@ nav{
 
 input[type="checkbox"] {
   position: absolute;
-  left: -50vw;
+  left: -60vw;
 }
 
 
@@ -42,16 +46,16 @@ input[type="checkbox"] {
   line-height: 80px;
   text-align: center;
 }
-nav ul{
+.nav ul{
     float: right;
     margin-right: 60px;
 }
-nav ul li{
+.nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 2px;
 }
-nav ul li a{
+.nav ul li a{
     color: #f2f2f2;
     text-decoration: none;
     font-weight: 600;
@@ -61,7 +65,7 @@ nav ul li a{
     text-decoration: none;
 }
 a.active,a:hover{
-    transition: .5s;
+    transition: 1.5s;
     border-radius: 10% 100% 100% 0% / 0% 50% 50% 0% ;
 }
 
@@ -143,11 +147,12 @@ a.active,a:hover{
       font-size: 60px;
       z-index: 2;
     }
+    
     label.logo a{
-      margin-right:0;
+      margin:10px;
     }
     
-    #menu[type=checkbox]:checked ~ ul{
+    #menu[type="checkbox"]:checked ~ ul{
       position: fixed;
       top: 15%;
       left: 0;
@@ -168,10 +173,21 @@ a.active,a:hover{
         left: 0;
       }
     }
-    nav ul li a{
+    #menu[type="checkbox"]:checked ~ .loader{
+      display: none;
+    }
+
+    .top_banner li a{
       font-weight: 800;
       font-size: 40px;
-  }
+      color:white;
+      text-decoration: none;
+    }
+    label.logo a{
+      margin: 5px 15px;
+    }
+
+  /* 動画背景と文字*/
   .bgv_description{
     font-size: 15px;
     white-space: nowrap;
@@ -210,6 +226,7 @@ a.active,a:hover{
   overflow: hidden;
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
 }
+
 .loader:hover{
   background:#03e9f4;
              
@@ -299,6 +316,7 @@ a.active,a:hover{
     top: -100%;
   }
 }
+
 
 .bgv_area{
   width: 100%;
