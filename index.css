@@ -314,3 +314,62 @@ a.active,a:hover{
 .bgv_area{
   width: 100%;
 }
+
+/* SNSボタン */
+.sns_btn
+{
+	position: relative;
+  display: flex;
+  background-color: black;
+  justify-content: flex-end;
+}
+.sns_btn li
+{
+	position: relative;
+	list-style: none;
+	margin: 0 20px;
+  cursor: pointer;
+  top:-4px;
+}
+.sns_btn li a
+{
+	text-decoration: none;
+}
+.sns_btn li a .fa
+{
+	font-size: 2em;
+	color: #222;
+}
+.sns_btn li::before
+{
+	font-family: fontAwesome;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 2em;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+.sns_btn li:nth-child(1)::before
+{
+	content: '\f099';
+	color: #1da1f2;
+	border-bottom: 2px solid #1da1f2;
+}
+.sns_btn li:nth-child(2)::before
+{
+	content: '\f082';
+	color: #305097;
+	border-bottom: 2px solid #305097;
+}
+.sns_btn li:nth-child(3)::before
+{
+	content: '\f16a';
+	color: #ff0000;
+	border-bottom: 2px solid #ff0000;
+}
+.sns_btn li:hover::before
+{
+	height: 100%;
+}
